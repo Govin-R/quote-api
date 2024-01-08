@@ -1,0 +1,89 @@
+html {
+  width: auto;
+  height: auto;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  font-family: monospace;
+  font-size: 28px;
+  background-color: hsl(218, 23%, 16%);
+  color: white;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #content {
+  width: 40%;
+  height: min-content;
+  background-color: hsl(217, 19%, 24%);
+  position: relative;
+  padding: 1rem 0;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  display: grid;
+  border-radius: 10px;
+}
+#container #content #advice-head {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(150, 78%, 53%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#container #content #advice {
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(240, 51%, 92%);
+}
+#container #change_button {
+  background-image: url("./images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(150, 100%, 66%);
+  width: auto;
+  height: auto;
+  padding: 2rem;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 50%;
+  position: relative;
+  transform: translate(0, 50%);
+  justify-self: center;
+  transition: all;
+}
+#container #change_button:hover {
+  box-shadow: 0px 0px 20px 2px hsl(150, 100%, 66%);
+  transition-duration: 100ms;
+}
+#container #change_button:active {
+  outline: 0;
+}
+
+#divider {
+  content: url("./images/pattern-divider-desktop.svg");
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: hsl(218, 23%, 16%);
+  }
+  #container #content {
+    position: absolute;
+    width: 80%;
+  }
+  #divider {
+    content: url("./images/pattern-divider-mobile.svg");
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

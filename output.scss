@@ -1,0 +1,101 @@
+$Light_Cyan: hsl(193, 38%, 86%);
+$Neon_Green: hsl(150, 100%, 66%);
+$Grayish_Blue: hsl(217, 19%, 38%);
+$Dark_Grayish_Blue: hsl(217, 19%, 24%);
+$Dark_Blue: hsl(218, 23%, 16%);
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+html{
+    width:auto;
+    height: auto;
+}
+body{
+    height:100vh;
+    width:auto;
+    //font-family:'Manrope','sans-serif';
+    font-family:monospace;
+    font-size:28px;
+    background-color: $Dark_Blue;
+    color: white;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & #content{
+        width: 40%;
+        height: min-content;
+        background-color: $Dark_Grayish_Blue;
+        position: relative;
+        padding:1rem 0;
+        padding:1.5rem 1.5rem 0 1.5rem;
+        display: grid;
+        border-radius: 10px;
+        
+        & #advice-head{
+            text-align: center;
+            font-size: 1rem;
+            color: hsl(150, 78%, 53%);
+            text-transform: uppercase;
+            letter-spacing: 3px; 
+        }
+        & #advice{
+            text-align: center;
+            font-size: 1.5rem;
+            color: hsl(240, 51%, 92%); 
+        }
+        
+    }
+    
+
+    & #change_button{
+        background-image: url('./images/icon-dice.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $Neon_Green;
+        width:auto;
+        height:auto;
+        padding: 2rem; 
+        border: 0;
+        margin:0;
+        outline: 0;
+        border-radius: 50%;
+        position: relative;
+        transform: translate(0,50%);
+        justify-self: center;
+        transition: all;
+        &:hover{
+            box-shadow: 0px 0px 20px 2px  hsl(150, 100%, 66%); 
+            transition-duration: 100ms;
+        }
+        &:active{ 
+            outline:0;
+        }
+    }
+}
+    #divider{
+        content: url("./images/pattern-divider-desktop.svg");
+        width: 100%;
+    }
+
+@media (max-width:400px) {
+    body{
+        background-color:$Dark_Blue;
+    }
+    #container{
+        & #content{
+            position:absolute;
+            width:80%;
+        }
+    }
+   #divider{
+    content: url('./images/pattern-divider-mobile.svg');
+    width: 100%;
+   } 
+
+}
