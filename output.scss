@@ -31,9 +31,8 @@ body{
         width: 40%;
         height: min-content;
         background-color: $Dark_Grayish_Blue;
-        position: relative;
-        padding:1rem 0;
-        padding:1.5rem 1.5rem 0 1.5rem;
+        position: relative; 
+        padding:2rem 2rem 0 2rem;
         display: grid;
         border-radius: 10px;
         
@@ -91,6 +90,7 @@ body{
         & #content{
             position:absolute;
             width:80%;
+            padding:1.5rem 1.5rem 0 1.5rem;
         }
     }
    #divider{
